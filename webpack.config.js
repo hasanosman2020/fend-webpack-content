@@ -16,7 +16,8 @@ module.exports = {
                     }
                 }
             }
-        ],
+        ]
+    },
         plugins: [
             new HtmlWebPackPlugin({
                 template: "./src/client/views/index.html",
@@ -24,4 +25,4 @@ module.exports = {
             })
         ]
     }
-}
+
