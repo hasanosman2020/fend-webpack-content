@@ -7,12 +7,24 @@ module.exports = {
     mode: 'production',
     entry: './src/client/index.js',
     devtool: 'source-map',
+    output: {
+        libraryTarget: 'var',
+        library: 'Client'
+    }
     module: {
         rules: [
             {
-                test: '/\.js$/',
+                test: /\.js$/,
                 exclude: /node_modules/,
                 loader: "babel-loader"
+            },
+            {
+                test: /\.scss$/,
+                use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+            },
+            {
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
             }
         ]
     },

@@ -7,6 +7,13 @@ import './styles/footer.scss'
 import './styles/form.scss'
 import './styles/header.scss'
 
+export{
+    checkForName
+}
+export {
+    handleSubmit
+}
+
 
 console.log(checkForName);
 
