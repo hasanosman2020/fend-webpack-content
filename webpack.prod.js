@@ -10,7 +10,7 @@ module.exports = {
     output: {
         libraryTarget: 'var',
         library: 'Client'
-    }
+    },
     module: {
         rules: [
             {
